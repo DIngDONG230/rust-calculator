@@ -8,13 +8,13 @@ struct AreaT {
     width: f32,
     height: f32,
 }
-
+// Implements functions to AreaT struct
 impl AreaT {
     fn multiply(&self) -> f32 {
         return self.length * self.width * self.height;
     }
 }
-
+// Implements functions to Area struct
 impl Area {
     fn multiply(&self) -> f32 {
         return self.length * self.width;
@@ -32,6 +32,12 @@ impl Area {
 }
 
 fn main() {
+    // calling test function
+    test();
+}
+
+// test function
+fn test() {
     // test for Area
     let t1 = Area {
         length: 10.,
@@ -60,6 +66,5 @@ fn main() {
         width: 9.,
     };
     println!("test 4: {:?}", t4.is_square());
-
-    // test for 
 }
+
